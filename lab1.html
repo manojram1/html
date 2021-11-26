@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Application Form</title>
+ </head>
+ <body>
+    <form action = " " method = "get">
+	  <label for="name">Name:</label>
+	      <input type="text" id ="name" name="name" maxlength="25"  
+	        placeholder="Enter your name" required>&nbsp
+	  <label for="email">Email:</label>
+	     <input type="text" name="email" value="text@example.com" autofocus required>
+	     <br><br>
+	  <label for="pswrd">password:</label>
+	     <input type="password" id="pswrd" name="pswrd" minlength="6" placeholder="password" required ><br><br>
+      <label for="date">Event Date:</label>
+	     <input type="date" name="date" required><br><br>
+
+	  <label for="ctgry">Category:</label>
+         <select id="ctgry" name="ctgry">
+            <option value="student" >student</option>
+            <option value="employee">employee</option>
+            <option value="freelancer" selected>freelancer</option><br><br>
+       
+      <label for="ticket">Tickets:</label>
+          <input type="radio" id ="ticket" name="tkt" value="ticket" >1 ticket
+          <input type="radio" id ="ticket" name="tkt" value="ticket"  checked>2 tickets
+          <input type="radio" id ="ticket" name="tkt" value="ticket" >3 tickets <br><br>
+          <input type="checkbox" id="check" name="check" value="check" required>
+             Online Payment
+          <br><br>
+
+      <label for="textarea">Notes:</label><br>
+      <textarea rows="4" col="10" name="description" placeholder="Enter notes in deatils"></textarea><br>
+          <input type = "submit" name = "submit" value = "Submit">
+           <input type = "reset" name = "reset"  value = "Reset">
+
+    </form>
+ </body>
+</html>
